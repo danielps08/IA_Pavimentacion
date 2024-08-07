@@ -1,0 +1,23 @@
+en cmd pip install pyinstaller
+dentro de la carpeta del archivo .py
+ - pyinstaller archivo.py --noconsole --add-data "C:\ruta del icono\.ico;."
+
+carpeta dist\nombre main.exe   \\verificar si funciona el .exe
+instalar https://jrsoftware.org/isdl.php 
+ingresar a inno setup compiler
+	-create a new script file using the script wizard
+	-next
+	-nombre de la aplicacion/version/nombre de la compañia
+	-next
+	-application files - browse/ buscar el punto .exe
+	-add folder dist\membretes_auto\_internal
+	-add file\  los archivos .py necesarios
+	-next
+compilar si
+guardar en una carpeta nueva\colocar nombre
+
+se creara una carpeta Output
+ejecutar mysetup.exe
+
+si hay error: en script.iss inno\ files ->  *"; DestDir: "{app}\_internal";
+run
